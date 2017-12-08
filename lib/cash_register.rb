@@ -6,7 +6,7 @@ attr_accessor :total, :discount, :last_transaction
 
   def initialize(discount=0)
     @total = total
-    @discount = discount
+    @discount = discount.to_f/100.00
     @total = 0
   end
 
