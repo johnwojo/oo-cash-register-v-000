@@ -32,7 +32,7 @@ attr_accessor :total, :discount, :last_transaction, :items
     end
   end
 
-  def void_last_transaction
+  def void_last_transaction #removes whatever value was set as the @last_transaction amount from the total. 
     @total = @total - @last_transaction
   end
 end
