@@ -26,7 +26,7 @@ attr_accessor :total, :discount, :last_transaction
     else
       @discount = @discount.to_f/100
       @total = @total-(@total*@discount)
-      return "After the discount, the total comes to #{@total}."
+      return "After the discount, the total comes to #{@total.to_i}."
     end
   end
 
