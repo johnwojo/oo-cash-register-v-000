@@ -8,7 +8,6 @@ attr_accessor :total, :discount, :last_transaction
     @total = total
     @discount = discount
     @total = 0
-    @discount.to_f
   end
 
   def total
