@@ -7,6 +7,7 @@ attr_accessor :total, :discount, :last_transaction, :items
     @total = total
     @discount = discount
     @total = 0
+    @items = []
   end
 
   def total
@@ -28,11 +29,6 @@ attr_accessor :total, :discount, :last_transaction, :items
       @total = @total-(@total*@discount)
       return "After the discount, the total comes to $#{@total.to_i}."
     end
-  end
-
-
-  def items
-    @list_of_items
   end
 
   def void_last_transaction
