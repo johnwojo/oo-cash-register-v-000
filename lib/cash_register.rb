@@ -8,7 +8,7 @@ attr_accessor :total, :discount, :last_transaction
     @total = total
     @discount = discount
     @total = 0
-    @discount.to_f/100
+    @discount = @discount.to_f/100
   end
 
   def total
