@@ -10,6 +10,7 @@ attr_accessor :total, :discount, :last_transaction
     @total = 0
     @discount.to_f
   end
+  binding.pry
 
   def total
     @total
