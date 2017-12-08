@@ -29,6 +29,7 @@ attr_accessor :total, :discount, :last_transaction
       return "After the discount, the total comes to #{@total}."
     end
   end
+  binding.pry
 
   def items
     @@list_of_items
