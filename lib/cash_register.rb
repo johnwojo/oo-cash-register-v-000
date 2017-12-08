@@ -25,6 +25,7 @@ attr_accessor :total, :discount, :last_transaction
       return "There is no discount to apply."
 
     else
+      @discount = @discount.to_f/100
       @total = @total*@discount
       return "After the discount, the total comes to #{@total}."
     end
