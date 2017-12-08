@@ -25,7 +25,7 @@ attr_accessor :total, :discount, :last_transaction
 
     else
       @total = @total*@discount
-      return "After the discount, the total comes to #{total}."
+      return "After the discount, the total comes to #{@total}."
     end
   end
 
