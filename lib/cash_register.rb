@@ -15,7 +15,7 @@ attr_accessor :total, :discount, :last_transaction
   end
 
   def add_item(title,price,quantity=1)
-    @@list_of_items << title
+    @list_of_items = []
     @total = @total + (price*quantity)
   end
 
