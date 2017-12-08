@@ -21,7 +21,6 @@ attr_accessor :total, :discount, :last_transaction
 
   def apply_discount
     @discount = @discount.to_f
-    @discount/100.00
     if @discount == 0
       return "There is no discount to apply."
 
